@@ -25,21 +25,21 @@ A computer vision Sudoku solver that automatically:
 
 ---
 ## Project Structure / Структура проекта
+```
 SudokuSolver/
 ├── src/
-│ ├── SudokuSolver.py # Main solver logic / Основной алгоритм
-│ ├── OCR_CNN_Training.py # Model training / Обучение модели
-│ ├── OCR_CNN_Test.py # Model testing / Тестирование модели
-│ └── utils.py # Helper functions / Вспомогательные функции
+│   ├── SudokuSolver.py         # Main solver logic / Основной алгоритм
+│   ├── OCR_CNN_Training.py     # Model training / Обучение модели
+│   ├── OCR_CNN_Test.py         # Model testing / Тестирование модели
+│   └── utils.py                # Helper functions / Вспомогательные функции
 ├── models/
-│ ├── digit_classifier.keras # Pretrained model / Готовая модель
-│ └── best_model.keras # Best model / Лучшая версия модели
+│   ├── digit_classifier.keras  # Pretrained model / Готовая модель
+│   └── best_model.keras        # Best model / Лучшая версия модели
 ├── data/
-│ └── examples/ # Sample puzzles / Примеры изображений
-└── requirements.txt # Dependencies / Зависимости
-
+│   └── examples/               # Sample puzzles / Примеры изображений
+└── requirements.txt            # Dependencies / Зависимости
+```
 ---
-
 ## Installation / Установка
 **English**:  
 1. Clone the repository
