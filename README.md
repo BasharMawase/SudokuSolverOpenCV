@@ -74,7 +74,7 @@ Requirements / Требования
 Core Dependencies / Основные зависимости:
 ```
 ---
-Requirements / Требования
+## Requirements / Требования
 ```bash
 opencv-python>=4.5  # Image processing / Обработка изображений
 tensorflow>=2.10    # Machine learning / Машинное обучение
@@ -82,7 +82,6 @@ numpy>=1.23         # Matrix operations / Матричные операции
 Optional / Опционально:
 ```
 ```bash
-pytesseract         # OCR fallback / Резервное распознавание текста
 matplotlib          # Visualization / Визуализация
 ```
 
