@@ -3,7 +3,6 @@
 - [Overview / Обзор](#overview--обзор)
 - [Project Structure / Структура проекта](#project-structure--структура-проекта)
 - [Installation / Установка](#installation--установка)
-- [Usage / Использование](#usage--использование)
 - [Requirements / Требования](#requirements--требования)
   
 ## Overview / Обзор
@@ -74,6 +73,8 @@ python src/OCR_CNN_Training.py --epochs 10
 Requirements / Требования
 Core Dependencies / Основные зависимости:
 ```
+---
+Requirements / Требования
 ```bash
 opencv-python>=4.5  # Image processing / Обработка изображений
 tensorflow>=2.10    # Machine learning / Машинное обучение
