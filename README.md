@@ -69,9 +69,8 @@ English: Train the model (optional)
 ```bash
 # English: Train for 100 epochs
 # Русский: Обучение на 100 эпохах
-python src/OCR_CNN_Training.py --epochs 10
-Requirements / Требования
-Core Dependencies / Основные зависимости:
+python src/OCR_CNN_Training.py --epochs 100
+
 ```
 ---
 ## Requirements / Требования
@@ -79,7 +78,6 @@ Core Dependencies / Основные зависимости:
 opencv-python>=4.5  # Image processing / Обработка изображений
 tensorflow>=2.10    # Machine learning / Машинное обучение
 numpy>=1.23         # Matrix operations / Матричные операции
-Optional / Опционально:
 ```
 ```bash
 matplotlib          # Visualization / Визуализация
