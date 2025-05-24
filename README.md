@@ -1,6 +1,17 @@
 # Sudoku Solver with OpenCV & MNIST / Решатель Sudoku на OpenCV и MNIST
 
 <div align="center">
+
+[![GitHub Stars](https://img.shields.io/github/stars/BasharMawase/SudokuSolverOpenCV?style=social)](https://github.com/BasharMawase/SudokuSolverOpenCV/stargazers)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5.0%2B-blue?logo=opencv)](https://opencv.org)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=BasharMawase&theme=gruvbox)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+
+<div align="center">
   <img src="https://github.com/user-attachments/assets/6d08064a-5412-4c17-861e-662f0bc6fb35" width="45%">
   <img src="https://github.com/user-attachments/assets/9ced8717-42d3-40f1-92a6-3e4bc6cd709e" width="45%">
 </div>
@@ -10,7 +21,6 @@
 - [Features](#features--возможности)
 - [Project Structure](#project-structure--структура-проекта)
 - [Installation](#installation--установка)
-- [Usage](#usage--использование)
 - [Advanced](#advanced--дополнительные-возможности)
 - [Requirements](#requirements--требования)
 - [Contacts](#contacts--контакты)
@@ -95,7 +105,7 @@ Options / Параметры:
 --save       Save solution image / Сохранить решение
 ```
 ---
-Advanced / Дополнительные возможности
+## Advanced / Дополнительные возможности
 English: Train the model (optional)
 Русский: Обучить модель (опционально)
 
@@ -115,6 +125,6 @@ numpy>=1.23         # Matrix operations / Матричные операции
 matplotlib          # Visualization / Визуализация
 ```
 
-### Контакты / Contacts:
+## Contacts / Контакты 
 - Email: basharmawaseru@gmail.com
 - Issues: https://github.com/BasharMawase/SudokuSolverOpenCV
