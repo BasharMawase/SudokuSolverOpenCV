@@ -6,8 +6,6 @@
 [![OpenCV](https://img.shields.io/badge/OpenCV-5.0%2B-blue?logo=opencv)](https://opencv.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
-[![Last Commit](https://img.shields.io/github/last-commit/BasharMawase/SudokuSolverOpenCV)](https://github.com/BasharMawase/SudokuSolverOpenCV/commits/main)
-
 [![trophy](https://github-profile-trophy.vercel.app/?username=BasharMawase&theme=gruvbox&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
@@ -25,8 +23,7 @@
 - [Usage](#usage--использование)
 - [Advanced](#advanced--дополнительные-возможности)
 - [Requirements](#requirements--требования)
-- [License](#license)
-- [Contributing](#contributing--участие)
+- [License 📜 ](#license)
 - [Contacts](#contacts--контакты)
 
 ---
@@ -127,6 +124,11 @@ numpy>=1.23         # Matrix operations / Матричные операции
 ```bash
 matplotlib          # Visualization / Визуализация
 ```
+## License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for full details.
+
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contacts / Контакты 
 - Email: basharmawaseru@gmail.com
