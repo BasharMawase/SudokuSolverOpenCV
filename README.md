@@ -4,12 +4,13 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/BasharMawase/SudokuSolverOpenCV?style=social)](https://github.com/BasharMawase/SudokuSolverOpenCV/stargazers)
 [![OpenCV](https://img.shields.io/badge/OpenCV-5.0%2B-blue?logo=opencv)](https://opencv.org)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
+[![Last Commit](https://img.shields.io/github/last-commit/BasharMawase/SudokuSolverOpenCV)](https://github.com/BasharMawase/SudokuSolverOpenCV/commits/main)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=BasharMawase&theme=gruvbox)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=BasharMawase&theme=gruvbox&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
-
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6d08064a-5412-4c17-861e-662f0bc6fb35" width="45%">
@@ -21,8 +22,11 @@
 - [Features](#features--возможности)
 - [Project Structure](#project-structure--структура-проекта)
 - [Installation](#installation--установка)
+- [Usage](#usage--использование)
 - [Advanced](#advanced--дополнительные-возможности)
 - [Requirements](#requirements--требования)
+- [License](#license)
+- [Contributing](#contributing--участие)
 - [Contacts](#contacts--контакты)
 
 ---
@@ -48,12 +52,14 @@ An intelligent Sudoku solver that combines computer vision and machine learning 
 - **Image Processing** / Обработка изображений
   - Perspective correction / Коррекция перспективы
   - Grid detection / Обнаружение сетки
+  - Adaptive thresholding / Адаптивная бинаризация
 - **Digit Recognition** / Распознавание цифр
   - 98.7% accuracy on MNIST / Точность 98.7% на MNIST
   - Custom CNN architecture / Собственная архитектура CNN
+  - Data augmentation / Аугментация данных
 - **Sudoku Solving** / Решение Sudoku
   - Backtracking algorithm / Алгоритм backtracking
-  - Real-time visualization / Визуализация в реальном времени
+  - Multiple difficulty support / Поддержка разных уровней сложности
 
 ---
 ## Project Structure / Структура проекта
@@ -76,33 +82,30 @@ SudokuSolver/
 ---
 
 ## Installation / Установка
+### Prerequisites / Предварительные требования
+- Python 3.8+
+- pip package manager
+
+### Steps / Шаги:
 ```bash
 # Clone repository / Клонировать репозиторий
 git clone https://github.com/BasharMawase/SudokuSolverOpenCV.git
 cd SudokuSolver
 
+# Create virtual environment (recommended) / Создать виртуальное окружение (рекомендуется)
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
 # Install dependencies / Установить зависимости
 pip install -r requirements.txt
 ```
 
-```bash
-git clone https://github.com/BasharMawase/SudokuSolverOpenCV.git
-cd SudokuSolver
-pip install -r requirements.txt
-```
-Usage / Использование
+## Usage / Использование
 
 English: Solve a Sudoku from image
 Русский: Решить Sudoku с изображения
 ```bash
-python src/SudokuSolver.py --image data/examples/sudoku1.jpg
-```
----
-Options / Параметры:
-```bash
---image      Path to Sudoku image / Путь к изображению
---debug      Show processing steps / Показать этапы обработки
---save       Save solution image / Сохранить решение
+python src/SudokuSolver.py --image data/examples/sudoku1.jpg```
 ```
 ---
 ## Advanced / Дополнительные возможности
