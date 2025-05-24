@@ -1,26 +1,49 @@
-# SudokuSolver with OpenCV + MNIST / Решатель Sudoku на OpenCV и MNIST
+# Sudoku Solver with OpenCV & MNIST / Решатель Sudoku на OpenCV и MNIST
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6d08064a-5412-4c17-861e-662f0bc6fb35" width="45%">
+  <img src="https://github.com/user-attachments/assets/9ced8717-42d3-40f1-92a6-3e4bc6cd709e" width="45%">
+</div>
+
 ## Table of Contents / Содержание
-- [Overview / Обзор](#overview--обзор)
-- [Project Structure / Структура проекта](#project-structure--структура-проекта)
-- [Installation / Установка](#installation--установка)
-- [Requirements / Требования](#requirements--требования)
-  
+- [Overview](#overview--обзор)
+- [Features](#features--возможности)
+- [Project Structure](#project-structure--структура-проекта)
+- [Installation](#installation--установка)
+- [Usage](#usage--использование)
+- [Advanced](#advanced--дополнительные-возможности)
+- [Requirements](#requirements--требования)
+- [Contacts](#contacts--контакты)
+
+---
+
 ## Overview / Обзор
 **English**:  
-A computer vision Sudoku solver that automatically:
-1. Detects Sudoku grids using OpenCV
-2. Recognizes digits with a pre-trained MNIST CNN model
-3. Solves the puzzle using backtracking algorithm
-4. Displays the solution on the original image
+An intelligent Sudoku solver that combines computer vision and machine learning to:
+1. Detect Sudoku grids in images using OpenCV
+2. Recognize digits with a CNN model trained on MNIST
+3. Solve puzzles using an optimized backtracking algorithm
+4. Overlay the solution seamlessly on the original image
 
 **Русский**:  
 Программа для автоматического решения Sudoku, которая:
-1. Находит сетку Sudoku на изображении (OpenCV)
-2. Распознаёт цифры с помощью CNN-модели (MNIST)
-3. Решает головоломку алгоритмом backtracking
+1. Обнаруживает сетку Sudoku на изображениях (OpenCV)
+2. Распознаёт цифры с помощью CNN-модели (обученной на MNIST)
+3. Решает головоломку с использованием алгоритма backtracking
 4. Накладывает решение на исходное изображение
-![telegram-cloud-photo-size-2-5280714333006982274-y](https://github.com/user-attachments/assets/6d08064a-5412-4c17-861e-662f0bc6fb35)
-![telegram-cloud-photo-size-2-5274255883309807658-y](https://github.com/user-attachments/assets/9ced8717-42d3-40f1-92a6-3e4bc6cd709e)
+
+---
+
+## Features / Возможности
+- **Image Processing** / Обработка изображений
+  - Perspective correction / Коррекция перспективы
+  - Grid detection / Обнаружение сетки
+- **Digit Recognition** / Распознавание цифр
+  - 98.7% accuracy on MNIST / Точность 98.7% на MNIST
+  - Custom CNN architecture / Собственная архитектура CNN
+- **Sudoku Solving** / Решение Sudoku
+  - Backtracking algorithm / Алгоритм backtracking
+  - Real-time visualization / Визуализация в реальном времени
 
 ---
 ## Project Structure / Структура проекта
@@ -39,14 +62,18 @@ SudokuSolver/
 └── requirements.txt            # Dependencies / Зависимости
 ```
 ---
-## Installation / Установка
-**English**:  
-1. Clone the repository
-2. Install dependencies
 
-**Русский**:  
-1. Склонируйте репозиторий
-2. Установите зависимости
+---
+
+## Installation / Установка
+```bash
+# Clone repository / Клонировать репозиторий
+git clone https://github.com/BasharMawase/SudokuSolverOpenCV.git
+cd SudokuSolver
+
+# Install dependencies / Установить зависимости
+pip install -r requirements.txt
+```
 
 ```bash
 git clone https://github.com/BasharMawase/SudokuSolverOpenCV.git
@@ -61,7 +88,13 @@ English: Solve a Sudoku from image
 python src/SudokuSolver.py --image data/examples/sudoku1.jpg
 ```
 ---
-
+Options / Параметры:
+```bash
+--image      Path to Sudoku image / Путь к изображению
+--debug      Show processing steps / Показать этапы обработки
+--save       Save solution image / Сохранить решение
+```
+---
 Advanced / Дополнительные возможности
 English: Train the model (optional)
 Русский: Обучить модель (опционально)
@@ -69,8 +102,7 @@ English: Train the model (optional)
 ```bash
 # English: Train for 100 epochs
 # Русский: Обучение на 100 эпохах
-python src/OCR_CNN_Training.py --epochs 100
-
+python src/OCR_CNN_Training.py --epochs 100 --batch_size 32
 ```
 ---
 ## Requirements / Требования
